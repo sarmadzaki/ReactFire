@@ -1,4 +1,4 @@
 # ReactFire
 sign in and sign up using Firebase and routing
-#Installation
+# Installation
 npm install
