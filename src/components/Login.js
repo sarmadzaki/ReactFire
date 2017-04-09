@@ -17,13 +17,10 @@ class Login extends Component {
         const auth = firebase.auth();
         // const Err = firebase.auth.Error();
         auth.signInWithEmailAndPassword(email, pass).then(() => {
-            let child = firebase.database().ref().child("userIdAndPass");
-            if (email === child & pass === child) {
-                console.log("Signed In");
-
-            } else
-            console.log("Error");
-            alert("Register First");
+           console.log("signed in");
+                   
+               
+            
         });
     }
 

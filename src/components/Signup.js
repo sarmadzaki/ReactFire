@@ -5,13 +5,15 @@ import '../App.css';
 import * as firebase from 'firebase';
 
 
+
+
 class Signup extends Component {
     constructor() {
         super()
 
         this.LetsSignup = this.LetsSignup.bind(this);
     }
-    
+
 
     LetsSignup() {
         const email = this.refs.email.value;
@@ -42,15 +44,17 @@ class Signup extends Component {
 
                 </div>
                 <div id="form" >
+                 
+                    
                     <label htmlFor="email">Email </label><br />
-                    <input type="email" className="form-control" placeholder="Email" ref="email" /><br /><br />
-                    <label htmlFor="pass" >Password </label><br />
-                    <input type="password" className="form-control" ref="pass" />
-                    <br />
-                    <button onClick={this.LetsSignup} className="btn btn-primary">Signup</button>
-                    <Link to="/"><button className="btn btn-secondary" >Home</button></Link>
-                </div>
+                <input type="email" className="form-control" placeholder="Email" ref="email" /><br /><br />
+                <label htmlFor="pass" >Password </label><br />
+                <input type="password" className="form-control" ref="pass" />
+                <br />
+                <button onClick={this.LetsSignup} className="btn btn-primary">Signup</button>
+                <Link to="/"><button className="btn btn-secondary" >Home</button></Link>
             </div>
+            </div >
         );
     }
 }
